@@ -1,0 +1,27 @@
+{
+  "name": "saveoutfit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "outfit.js",
+  "scripts": {
+    "docker-start": "pm2 start outfit.js --name outfit -i 5",
+    "start": "pm2 start outfit.js --name outfit -i 5",
+    "stop": "pm2 delete outfit",
+    "dev": "nodemon outfit.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "morgan": "^1.10.0",
+    "winston": "^3.10.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
